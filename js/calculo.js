@@ -13,15 +13,15 @@ function calcular(){
     console.log(delta)
 
     if(delta > 0){
-        x1 = (-b + Math.pow(delta , 0.5))/2*a
-        x2 = (-b - Math.pow(delta, 0.5))/2*a
+        x1 = (-b + Math.pow(delta , 0.5))/(2*a)
+        x2 = (-b - Math.pow(delta, 0.5))/(2*a)
         console.log ("Essa equação possui duas raizes:\nx1="+x1+"\nx2="+x2)
         document.getElementById("resultado1").innerText ="X1="+ x1.toFixed(2)
         document.getElementById("resultado2").innerText ="X2="+ x2.toFixed(2)
 
     }
     if(delta == 0){
-        x = (-b + Math.pow(delta , 0.5))/2*a
+        x = (-b + Math.pow(delta , 0.5))/(2*a)
         console.log("Essa equação possui apenas uma raiz:\nx="+x)
         document.getElementById("resultado").innerText = "X="+x.toFixed(2)
 

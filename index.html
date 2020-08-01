@@ -4,167 +4,168 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!----> 
 <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Calcula Raízes">
-  
 
-  <title>Calcula Raízes</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Calcula Raízes">
+    
 
-  <!-- Mobile Specific Meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- Ionic Icon Css -->
-  <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
-  <!-- Magnify Popup -->
-  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="icon" href="images/favicon.ico">
+    <title>Calcula Raízes</title>
 
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Mobile Specific Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- Ionic Icon Css -->
+    <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- Magnify Popup -->
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="icon" href="images/favicon.ico">
 
-</head>
+    <link rel="stylesheet" href="css/style.css">
 
-<body id="body">
+  </head>
 
-<!-- Slider Start -->
-<section class="slider">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="block">
-					<h1 class="animated fadeInRightBig">Calcula as raízes</h1>
-	     <div class="container1">
-           
-            <form class="form-inline animated fadeInDownBig">              
-              <input onkeyup="tamanhoCampo(this)"  class="form-control" type="text" id="A" placeholder="a" onblur="validaCampoNumericoA(event)"/>           
-              <label class="mb-2 mr-sm-2 text-white "> <p>x²+</p></label>
-              <input onkeyup="tamanhoCampo(this)" class="form-control" type="text" id ="B" placeholder="b" onblur="validaCampoNumericoB(event)"/>
-              <label class="mb-2 mr-sm-2 text-white "> <p>x+</p></label>
-              <input onkeyup="tamanhoCampo(this)" class="form-control" type="text" id="C" placeholder="c" onblur="validaCampoNumericoC(event)"/>
-              <label class="mb-2 mr-sm-2 text-white "> <p>=0</p></label>
-            </form>
+  <body id="body">
+
+  <!-- Slider Start -->
+  <section class="slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1 class="animated fadeInRightBig">Calcula as raízes</h1>
+        <div class="container1">
+            
+              <form class="form-inline animated fadeInDownBig">              
+                <input onkeyup="tamanhoCampo(this)"  class="form-control" type="text" id="A" placeholder="a" onblur="validaCampoNumericoA(event)"/>           
+                <label class="mb-2 mr-sm-2 text-white "> <p>x²+</p></label>
+                <input onkeyup="tamanhoCampo(this)" class="form-control" type="text" id ="B" placeholder="b" onblur="validaCampoNumericoB(event)"/>
+                <label class="mb-2 mr-sm-2 text-white "> <p>x+</p></label>
+                <input onkeyup="tamanhoCampo(this)" class="form-control" type="text" id="C" placeholder="c" onblur="validaCampoNumericoC(event)"/>
+                <label class="mb-2 mr-sm-2 text-white "> <p>=0</p></label>
+              </form>
+            </div>
+            <p class="botao"><button class="btn animated fadeInUpBig form-control" id="calcular" onclick="calcular()">calcular</button></p>
+              <p><span id="resultado"></span></p>
+              <p><span id="resultado1"></span></p>
+              <p><span id="resultado2"></span></p>
+            
           </div>
-          <p class="botao"><button class="btn animated fadeInUpBig form-control" id="calcular" onclick="calcular()">calcular</button></p>
-            <p><span id="resultado"></span></p>
-            <p><span id="resultado1"></span></p>
-            <p><span id="resultado2"></span></p>
-          
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Wrapper Start -->
-<section class="about section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7 col-sm-12">
-				<div class="block">
-					<div class="section-title">
-						<h2>Quem foi Bhaskara?</h2>
-            <p>Bhaskara cujo o nome  era Bhaskara Akaria, era um indiano nascido na cidade de Vijayapura, em 1114. Nascido em uma família de astrólogos tradicionais, seu pai se chama Mahesvara  e era um astromante de renome em seu país. Baskara seguiu a tradição familiar, porem dedicou seus estudos à matemática e a astronomia.</p>
-            <p>Em sua vida profissional ele foi professor, astrólogo, astrônomo, chefe  do observatório astronômico de Ujjain e um dos matemáticos mais importantes do século XII. Morreu aos 71 anos de idade na cidade de Ujjain, na Índia.</p>
-            <p>Ao completar  a obra do matemático indiano Brahmagupta(598-668)  tornou-se famoso,  encontrando a solução geral para a equação x²-ny2=1 que é chamada de equação de Pell, onde n, x e y são naturais e n > 1. A única solução para esta equação, se n possuir raiz exata, é se  x=1 e y=0, porém se a raiz de n não for exata existem infinitas soluções inteiras.</p>
-            <p>A equação que no Brasil leva o nome de Bhaskara é para a resolução de equações do segundo grau, em outros países essa nomenclatura não é utilizada, pois não foi ele quem descobriu a solução. Historicamente se tem registros da solução para essa equação de 4000 anos antes de Cristo com os babilônios. Naquela época por não existir a simbologia que temos nos dias atuais o que se tinha não era uma fórmula, mas sim um procedimento de como encontrar as raízes de equações quadráticas, aos quais Bhaskara fazia a utilização de um desse métodos para encontrar as raízes.</p>
-            <p>A fórmula como é conhecida hoje foi otimizada pelo matemático francês François Viète, que procurou um tratamento algébrico formal para obter uma formula geral. </p>
-					</div>
-				</div>
-			</div><!-- .col-md-7 close -->
-			<div class="col-md-5 col-sm-12">
-				<div class="block">
-					<img src="images/wrapper-img.png" alt="Img">
-				</div>
-			</div><!-- .col-md-5 close -->
-		</div>
-	</div>
-</section>
-
-<!-- modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Dados incorretos!</h4>
-        <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+        </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Modal body -->
-      <div class="modal-body">
-        Os campos das raizes a,b,c aceitam apenas valores numéricos!
+  <!-- Wrapper Start -->
+  <section class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <div class="block">
+            <div class="section-title">
+              <h2>Quem foi Bhaskara?</h2>
+              <p>Bhaskara cujo o nome  era Bhaskara Akaria, era um indiano nascido na cidade de Vijayapura, em 1114. Nascido em uma família de astrólogos tradicionais, seu pai se chama Mahesvara  e era um astromante de renome em seu país. Baskara seguiu a tradição familiar, porem dedicou seus estudos à matemática e a astronomia.</p>
+              <p>Em sua vida profissional ele foi professor, astrólogo, astrônomo, chefe  do observatório astronômico de Ujjain e um dos matemáticos mais importantes do século XII. Morreu aos 71 anos de idade na cidade de Ujjain, na Índia.</p>
+              <p>Ao completar  a obra do matemático indiano Brahmagupta(598-668)  tornou-se famoso,  encontrando a solução geral para a equação x²-ny2=1 que é chamada de equação de Pell, onde n, x e y são naturais e n > 1. A única solução para esta equação, se n possuir raiz exata, é se  x=1 e y=0, porém se a raiz de n não for exata existem infinitas soluções inteiras.</p>
+              <p>A equação que no Brasil leva o nome de Bhaskara é para a resolução de equações do segundo grau, em outros países essa nomenclatura não é utilizada, pois não foi ele quem descobriu a solução. Historicamente se tem registros da solução para essa equação de 4000 anos antes de Cristo com os babilônios. Naquela época por não existir a simbologia que temos nos dias atuais o que se tinha não era uma fórmula, mas sim um procedimento de como encontrar as raízes de equações quadráticas, aos quais Bhaskara fazia a utilização de um desse métodos para encontrar as raízes.</p>
+              <p>A fórmula como é conhecida hoje foi otimizada pelo matemático francês François Viète, que procurou um tratamento algébrico formal para obter uma formula geral. </p>
+            </div>
+          </div>
+        </div><!-- .col-md-7 close -->
+        <div class="col-md-5 col-sm-12">
+          <div class="block">
+            <img src="images/wrapper-img.png" alt="Img">
+          </div>
+        </div><!-- .col-md-5 close -->
       </div>
+    </div>
+  </section>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+  <!-- modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Dados incorretos!</h4>
+          <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Os campos das raizes a,b,c aceitam apenas valores numéricos!
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+        </div>
+
       </div>
-
     </div>
   </div>
-</div>
 
-<!-- footer Start -->
-<!--<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="footer-manu">
-					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact us</a></li>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">Terms</a></li>
-					</ul>
-				</div>
-				<p class="copyright">Copyright 2018 &copy; Design & Developed by <a href="http://www.themefisher.com">themefisher.com</a>. All rights reserved.
-					<br>
-					Get More <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
-				</p>
-			</div>
-		</div>
-	</div>
-</footer>-->
+  <!-- footer Start -->
+  <!--<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-manu">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <p class="copyright">Copyright 2018 &copy; Design & Developed by <a href="http://www.themefisher.com">themefisher.com</a>. All rights reserved.
+            <br>
+            Get More <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>-->
 
-    <!-- 
-    Essential Scripts
-    =====================================-->
+      <!-- 
+      Essential Scripts
+      =====================================-->
 
 
-    <!-- Main jQuery -->
-    <script src="plugins/jQuery/jquery.min.js"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <!-- slick Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- filter -->
-    <script src="plugins/shuffle/shuffle.min.js"></script>
-    <script src="plugins/SyoTimer/jquery.syotimer.min.js"></script>
+      <!-- Main jQuery -->
+      <script src="plugins/jQuery/jquery.min.js"></script>
+      <!-- Bootstrap 3.1 -->
+      <script src="plugins/bootstrap/bootstrap.min.js"></script>
+      <!-- slick Carousel -->
+      <script src="plugins/slick/slick.min.js"></script>
+      <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <!-- filter -->
+      <script src="plugins/shuffle/shuffle.min.js"></script>
+      <script src="plugins/SyoTimer/jquery.syotimer.min.js"></script>
 
-    <!-- Form Validator -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+      <!-- Form Validator -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-    <script src="plugins/google-map/map.js"></script>
+      <!-- Google Map -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+      <script src="plugins/google-map/map.js"></script>
 
-    <script src="js/script.js"></script>
+      <script src="js/script.js"></script>
 
-    <!--Calcula raizes-->
-    <script src="js/calculo.js"></script>
+      <!--Calcula raizes-->
+      <script src="js/calculo.js"></script>
 
-    </body>
+  </body>
 
-    </html>
+</html>
    
